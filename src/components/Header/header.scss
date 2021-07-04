@@ -1,6 +1,9 @@
 @import "../../global.scss";
 
 .header {
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100vw;
   height: 70px;
   background-color: $headerColor;
@@ -8,8 +11,10 @@
   top: 0;
   z-index: 2;
   overflow: hidden;
+  box-shadow: 0px 2px 2px 1px rgba(0, 126, 138, 0.2);
 
   .wrapper {
+    // max-width: 1400px;
     padding: 10px;
     display: flex;
     align-items: center;
