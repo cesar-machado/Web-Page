@@ -1,5 +1,58 @@
+@import "../../global.scss";
+
 .header {
-  width: 100%;
+  width: 100vw;
   height: 70px;
-  background-color: #c0c0c0;
+  background-color: $headerColor;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
+
+  .wrapper {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .left {
+    a {
+      margin-left: 50px;
+    }
+  }
+  .right {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+
+    li {
+      margin-left: 40px;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 24;
+      }
+    }
+  }
+
+  .dark {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 4px;
+
+    .moon {
+      font-size: 18px;
+    }
+  }
 }
