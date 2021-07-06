@@ -5,9 +5,11 @@ import "./main.scss";
 import Eu from "../../assets/eu.png";
 import Back from "../../assets/eu-back.png";
 import Down from "../../assets/down.png";
+import { useTheme } from "../../hooks/useTheme";
 
 export default function Main() {
   const textRef = useRef();
+  const { theme } = useTheme();
 
   useEffect(() => {
     init(textRef.current, {
@@ -17,7 +19,7 @@ export default function Main() {
     });
   }, []);
   return (
-    <div className="main" id="Main">
+    <div className={theme === "light" ? "main" : "dark"} id="Main">
       <div className="wrapper">
         <div className="left">
           <div className="image1">

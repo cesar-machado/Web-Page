@@ -8,6 +8,11 @@
   width: 100px;
   height: 190px;
 
+  #dark {
+    background-color: black;
+    height: 88vh;
+  }
+
   .wrapper {
     display: flex;
     justify-content: space-around;

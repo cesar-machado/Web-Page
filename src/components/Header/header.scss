@@ -1,5 +1,26 @@
 @import "../../global.scss";
 
+#dark {
+  background-color: #434343;
+
+  a {
+    text-decoration: none;
+    color: #b5b5b5;
+    font-weight: 500;
+    font-size: 24;
+  }
+
+  li:hover {
+    background-color: $headerColor;
+    border-bottom: 1px solid #000;
+    border-radius: 8px;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
 .header {
   // display: flex;
   justify-content: space-between;
@@ -47,6 +68,7 @@
       text-align: center;
       transition: 1s ease;
       cursor: pointer;
+      list-style: none;
 
       a {
         text-decoration: none;
@@ -66,15 +88,18 @@
     }
   }
 
-  .dark {
+  .toggle {
     background: none;
     border: none;
     cursor: pointer;
     margin-right: 40px;
     margin-top: 4px;
-
     .moon {
       font-size: 18px;
+    }
+    .sun {
+      font-size: 18px;
+      color: #f2c94c;
     }
   }
 }
