@@ -10,14 +10,18 @@
     font-size: 24;
   }
 
-  li:hover {
-    background-color: $headerColor;
-    border-bottom: 1px solid #000;
-    border-radius: 8px;
-
-    a {
-      color: #000;
-    }
+  a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $headerColor;
+    transition: width 0.5s;
+  }
+  a:hover::after {
+    width: 100%;
+    // margin-left: 10px;
+    //transition: width .3s;
   }
 }
 
@@ -66,7 +70,8 @@
       margin-left: 40px;
       width: 80px;
       text-align: center;
-      transition: 1s ease;
+      transition: border-bottom 0.5s ease;
+
       cursor: pointer;
       list-style: none;
 
@@ -77,14 +82,29 @@
         font-size: 24;
       }
     }
-    li:hover {
-      background-color: $textColor;
-      border-bottom: 1px solid #000;
-      border-radius: 8px;
+    // li:hover {
+    //   // background-color: $textColor;
 
-      a {
-        color: #fff;
-      }
+    //   // border-radius: 8px;
+    //   // transform: translateX(10%);
+
+    //   a {
+
+    //     color: #fff;
+    //   }
+    // }
+    a::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #000;
+      transition: width 0.5s;
+    }
+    a:hover::after {
+      width: 100%;
+      // margin-left: 10px;
+      //transition: width .3s;
     }
   }
 
@@ -99,7 +119,7 @@
     }
     .sun {
       font-size: 18px;
-      color: #f2c94c;
+      color: #f7be16;
     }
   }
 }

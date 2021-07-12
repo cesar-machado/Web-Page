@@ -1,5 +1,5 @@
 import "./header.scss";
-import Logo from "../../assets/icon.png";
+import Logo from "../../assets/Logo.png";
 import { MdWbSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
 import { useTheme } from "../../hooks/useTheme";
