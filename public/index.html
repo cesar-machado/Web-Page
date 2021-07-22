@@ -7,7 +7,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="icon" href="../src/assets/icon.png" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +21,14 @@
         margin: 0;
         padding: 0;
         overflow-x: hidden;
+      }
+      html {
+        @media (max-width: 1080) {
+          font-size: 93.75%;
+        }
+        @media (max-width: 720) {
+          font-size: 87.5%;
+        }
       }
     </style>
   </head>

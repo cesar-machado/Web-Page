@@ -8,6 +8,7 @@
     color: #b5b5b5;
     font-weight: 500;
     font-size: 24;
+    height: 45px;
   }
 
   a::after {
@@ -27,7 +28,7 @@
 
 .header {
   // display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 70px;
@@ -39,7 +40,8 @@
   box-shadow: 0px 2px 2px 1px rgba(0, 126, 138, 0.2);
 
   .wrapper {
-    // max-width: 1400px;
+    max-width: 1450px;
+    margin: 0 auto;
     padding: 10px;
     display: flex;
     align-items: center;
