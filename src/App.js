@@ -1,8 +1,8 @@
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
+import Sobre from "./components/Sobre/Sobre";
+import Projetos from "./components/Projetos/Projetos";
+import Contato from "./components/Contato/Contato";
 import { ThemeContextProvider } from "./contexts/ThemeContext";
 
 import "./app.scss";
@@ -15,9 +15,9 @@ function App() {
 
         <section className="sections">
           <Main />
-          <About />
-          <Portfolio />
-          <Contact />
+          <Sobre />
+          <Projetos />
+          <Contato />
         </section>
       </div>
     </ThemeContextProvider>

@@ -1,9 +1,9 @@
-import "./about.scss";
+import "./sobre.scss";
 import Back from "../../assets/fundo-branco.png";
 
-export default function About() {
+export default function Sobre() {
   return (
-    <div className="about" id="About">
+    <div className="about" id="Sobre">
       <div className="wrapper">
         <div className="left">
           <div className="content">
@@ -23,7 +23,7 @@ export default function About() {
             <h3>
               Tenho interesse em vagas de Desenvolvedor front-end jr ou mobile.
             </h3>
-            <a href="#Contact">
+            <a href="#Contato">
               <button>Entre em Contato</button>
             </a>
           </div>

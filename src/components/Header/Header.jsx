@@ -21,13 +21,13 @@ export default function Header() {
               <a href="#Main">Home</a>
             </li>
             <li>
-              <a href="#About">Sobre</a>
+              <a href="#Sobre">Sobre</a>
             </li>
             <li>
-              <a href="#Portfolio">Portfólio</a>
+              <a href="#Projetos">Projetos</a>
             </li>
             <li>
-              <a href="#Contact">Contato</a>
+              <a href="#Contato">Contato</a>
             </li>
           </ul>
           {/* <button className="dark">
