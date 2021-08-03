@@ -35,7 +35,7 @@ export default function Main() {
           <h4>
             Desenvolvedor <span ref={textRef}></span>
           </h4>
-          <a href="#About">
+          <a href="#Sobre">
             <img src={Down} alt="down" />
           </a>
         </div>
