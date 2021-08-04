@@ -1,5 +1,7 @@
-import "./contato.scss";
 import emailjs from "emailjs-com";
+import ImgContato from "../../assets/contato.png";
+
+import "./contato.scss";
 
 export default function Contato() {
   function sendEmail(e) {
@@ -17,52 +19,49 @@ export default function Contato() {
       );
     e.target.reset();
   }
-
-  console.log(process.env.USER_EMAIL);
   return (
     <div className="contact" id="Contato">
       <div className="wrapper">
-        <div className="right">
-          <h1>Contatos</h1>
+        <div className="left">
+          <img src={ImgContato} alt="avatar" />
+          <h1>Entre em Contato</h1>
           <form onSubmit={sendEmail}>
-            <div className="row pt-5 mx-auto">
-              <div className="col-8 form-group mx-auto">
+            <div className="inputs">
+              <div>
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Name"
+                  placeholder="Nome"
                   name="name"
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
+              <div>
                 <input
                   type="email"
                   className="form-control"
-                  placeholder="Email Address"
+                  placeholder="Endereço de Email"
                   name="email"
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
+              <div>
                 <textarea
                   className="form-control"
                   id=""
-                  cols="30"
-                  rows="8"
-                  placeholder="Your message"
+                  cols="50"
+                  rows="5"
+                  placeholder="Mensagem"
                   name="message"
                 ></textarea>
               </div>
-              <div className="col-8 pt-3 mx-auto">
-                <input
-                  type="submit"
-                  className="btn btn-info"
-                  value="Send Message"
-                ></input>
+              <div>
+                <button type="submit" className="btn">
+                  Enviar
+                </button>
               </div>
             </div>
           </form>
         </div>
-        <div className="left"></div>
+        <div className="right">Minha redes sociais</div>
       </div>
     </div>
   );

@@ -1,3 +1,69 @@
 .contact {
-  background-color: lightgreen;
+  max-width: 1450px;
+  margin: 0 auto;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left {
+      flex: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 10px;
+
+      img {
+        height: 230px;
+        width: 250px;
+      }
+
+      h1 {
+        margin-top: 10px;
+      }
+
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        input {
+          margin-top: 10px;
+          height: 30px;
+          width: 315px;
+          // border-radius: 5px;
+        }
+
+        textarea {
+          margin-top: 10px;
+        }
+
+        .btn {
+          width: 200px;
+          height: 30px;
+          margin-left: 55px;
+          border-radius: 10px;
+          border: 0;
+          cursor: pointer;
+          background: #293462;
+          color: #fff;
+          transition: filter 0.1s;
+
+          &:hover {
+            filter: brightness(0.8);
+          }
+        }
+      }
+    }
+
+    .right {
+      background-color: #5555;
+      flex: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
