@@ -18,6 +18,7 @@ export default function Main() {
       strings: ["Front-end", "Mobile"],
     });
   }, []);
+
   return (
     <div className={theme === "light" ? "main" : "dark"} id="Main">
       <div className="wrapper">

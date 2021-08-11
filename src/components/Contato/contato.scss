@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .contact {
   max-width: 1450px;
   margin: 0 auto;
@@ -21,6 +23,8 @@
 
       h1 {
         margin-top: 10px;
+
+        color: $textColor;
       }
 
       .inputs {
@@ -46,24 +50,59 @@
           border-radius: 10px;
           border: 0;
           cursor: pointer;
-          background: #293462;
+          background: $mainColor;
           color: #fff;
           transition: filter 0.1s;
 
           &:hover {
-            filter: brightness(0.8);
+            filter: brightness(1.2);
           }
         }
       }
     }
 
     .right {
-      background-color: #5555;
+      // background-color: #5555;
       flex: 0.5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
+
+      h2 {
+        color: $textColor;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        // margin-top: 20px;
+        overflow: hidden;
+        height: 50px;
+
+        width: 29%;
+        transition: all 250ms;
+
+        p {
+          color: #000;
+          margin-left: 5px;
+        }
+        .icon {
+          margin-left: 15px;
+        }
+
+        &:hover {
+          transform: scale(1);
+          font-weight: bold;
+          margin-left: 10px;
+        }
+      }
+      .codigo {
+        margin-top: 20px;
+
+        a {
+          margin-top: 10px;
+        }
+      }
     }
   }
 }

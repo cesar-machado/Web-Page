@@ -3,7 +3,7 @@ import Back from "../../assets/fundo-branco.png";
 
 export default function Sobre() {
   return (
-    <div className="about" id="Sobre">
+    <section className="about" id="Sobre">
       <div className="wrapper">
         <div className="left">
           <div className="content">
@@ -24,10 +24,18 @@ export default function Sobre() {
               Tenho interesse em vagas de Desenvolvedor front-end jr ou mobile.
             </h3>
             <a href="#Contato">
-              <button>Entre em Contato</button>
+              <button className="btn-ct">Entre em Contato</button>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1eVpzbu7a_a1ShLsiqeHanSteFDXmAHfO/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn-cv"> Meu Currículo</button>
             </a>
           </div>
         </div>
+
         <div className="right">
           <div className="skills">
             <div className="conteudo">
@@ -57,6 +65,6 @@ export default function Sobre() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
