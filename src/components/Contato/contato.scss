@@ -197,3 +197,258 @@
     }
   }
 }
+
+@media screen and (max-width: 570px) {
+  #Contato {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .left {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5px;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin-top: 10px;
+            height: 20px;
+            width: 250px;
+            // border-radius: 5px;
+          }
+
+          textarea {
+            margin-top: 10px;
+            width: 250px;
+            height: 70px;
+          }
+
+          .btn {
+            width: 100px;
+          }
+        }
+      }
+
+      .right {
+        // background-color: #5555;
+        flex: 0.5;
+        flex-direction: column;
+        margin-top: 20px;
+
+        h2 {
+          color: $textColor;
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          text-decoration: none;
+          // margin-top: 20px;
+          overflow: hidden;
+          height: 42px;
+          width: 80vw;
+
+          transition: all 250ms;
+
+          p {
+            color: #000;
+            margin-left: 5px;
+          }
+          .icon {
+            margin-left: 15px;
+          }
+
+          &:hover {
+            transform: scale(1);
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+        .codigo {
+          margin-top: 10px;
+
+          a {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #Contato {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .left {
+        img {
+          height: 100px;
+          width: 100px;
+        }
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          margin-top: 5px;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin-top: 10px;
+            height: 20px;
+            width: 250px;
+            // border-radius: 5px;
+          }
+
+          textarea {
+            margin-top: 10px;
+            width: 250px;
+            height: 60px;
+          }
+
+          .btn {
+            width: 100px;
+            height: 25px;
+          }
+        }
+      }
+
+      .right {
+        // background-color: #5555;
+        flex: 0.5;
+        flex-direction: column;
+        margin-top: 10px;
+
+        h2 {
+          color: $textColor;
+          margin-bottom: 10px;
+          font-size: 15px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          text-decoration: none;
+          // margin-top: 20px;
+          overflow: hidden;
+          height: 32px;
+          width: 80vw;
+
+          transition: all 250ms;
+
+          p {
+            color: #000;
+            margin-left: 5px;
+          }
+          .icon {
+            margin-left: 10px;
+            font-size: 25px;
+          }
+
+          &:hover {
+            transform: scale(1);
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #Contato {
+    .wrapper {
+      .left {
+        img {
+          height: 95px;
+          width: 95px;
+        }
+        h1 {
+          font-size: 15px;
+          margin-top: -3px;
+        }
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          margin-top: 0px;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin-top: 10px;
+            height: 20px;
+            width: 250px;
+            // border-radius: 5px;
+          }
+
+          textarea {
+            margin-top: 10px;
+            width: 250px;
+            height: 35px;
+          }
+
+          .btn {
+            width: 100px;
+            height: 25px;
+          }
+        }
+      }
+      .right {
+        h2 {
+          color: $textColor;
+          margin-bottom: 0px;
+          font-size: 12px;
+          margin-top: 0px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+          text-decoration: none;
+          // margin-top: 20px;
+          overflow: hidden;
+          height: 32px;
+          width: 80vw;
+
+          transition: all 250ms;
+
+          p {
+            color: #000;
+            margin-left: 5px;
+            font-size: 15px;
+          }
+          .icon {
+            margin-left: 10px;
+            font-size: 22px;
+          }
+
+          &:hover {
+            transform: scale(1);
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

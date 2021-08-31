@@ -111,6 +111,20 @@ export default function Contato() {
                 <p>cesarmach30</p>
               </a>
             </div>
+            <div className="github">
+              <a
+                href="https://github.com/cesar-machado"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithubSquare
+                  color="#171515"
+                  fontSize="30px"
+                  className="icon"
+                />
+                <p>cesar-machado</p>
+              </a>
+            </div>
             <div className="whatsApp">
               <a
                 href="https://api.whatsapp.com/send?phone=5511992812563"
@@ -131,21 +145,6 @@ export default function Contato() {
               >
                 <FaEnvelope color="#5436d8" fontSize="30px" className="icon" />
                 <p>cesarmach19@gmail.com</p>
-              </a>
-            </div>
-            <div className="codigo">
-              <h2>Veja um pouco de código</h2>
-              <a
-                href="https://github.com/cesar-machado"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithubSquare
-                  color="#171515"
-                  fontSize="30px"
-                  className="icon"
-                />
-                <p>cesar-machado</p>
               </a>
             </div>
           </div>
