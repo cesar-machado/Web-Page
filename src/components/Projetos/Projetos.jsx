@@ -13,11 +13,11 @@ export default function Portfolio() {
     },
     {
       id: "web",
-      title: "Aplicações Web",
+      title: "Web App",
     },
     {
       id: "mobile",
-      title: "Aplicações Mobile",
+      title: "Aplicativos",
     },
   ];
 
