@@ -59,7 +59,7 @@ export default function Sobre() {
                   <p>Html</p>
                   <p>Css</p>
                   <p>Sass</p>
-                  <p>Styled Component</p>
+                  <p>Styled Components</p>
                   <p>Linux</p>
                 </div>
               </div>
