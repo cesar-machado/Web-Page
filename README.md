@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./src/assets/logo.png" alt="logo">
+  <img src="./src/assets/logo1.svg" alt="logo">
 </div>
 
 # Esse é o repositório do meu Site.
