@@ -5,11 +5,13 @@ import "./main.scss";
 import Eu from "../../assets/eu.png";
 import Back from "../../assets/eu-back.png";
 import Down from "../../assets/down.png";
-import { useTheme } from "../../hooks/useTheme";
+// import { useTheme } from "../../hooks/useTheme";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default function Main() {
   const textRef = useRef();
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   useEffect(() => {
     init(textRef.current, {
@@ -20,7 +22,7 @@ export default function Main() {
   }, []);
 
   return (
-    <div className={theme === "light" ? "main" : "dark"} id="Main">
+    <div className="main" id="Main">
       <div className="wrapper">
         <div className="left">
           <div className="image1">

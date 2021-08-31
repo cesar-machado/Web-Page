@@ -1,47 +1,66 @@
-import "./header.scss";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/Logo.png";
-import { MdWbSunny } from "react-icons/md";
-import { FaMoon } from "react-icons/fa";
-import { useTheme } from "../../hooks/useTheme";
+import "./header.scss";
 
-export default function Header() {
-  const { theme, toggleTheme } = useTheme();
+function Navbar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
-    <div className="header" id={theme}>
-      <div className="wrapper">
-        <div className="left">
-          <a href="#Main">
-            {" "}
-            <img src={Logo} alt="icone" height="45" />
-          </a>
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="left">
+            <a href="#Main">
+              <img src={Logo} alt="icone" height="45" />
+            </a>
+          </div>
+          <div className="right">
+            <div id="drop-menu" className="menu-icon" onClick={handleClick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </div>
+            <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className="nav-item">
+                <a className="nav-links" href="#Main" onClick={closeMobileMenu}>
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-links"
+                  href="#Sobre"
+                  onClick={closeMobileMenu}
+                >
+                  Sobre
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-links"
+                  href="#Projetos"
+                  onClick={closeMobileMenu}
+                >
+                  Projetos
+                </a>
+              </li>
+              <li>
+                <a
+                  className="nav-links"
+                  href="#Contato"
+                  onClick={closeMobileMenu}
+                >
+                  Contato
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="right">
-          <ul className="list">
-            <li>
-              <a href="#Main">Home</a>
-            </li>
-            <li>
-              <a href="#Sobre">Sobre</a>
-            </li>
-            <li>
-              <a href="#Projetos">Projetos</a>
-            </li>
-            <li>
-              <a href="#Contato">Contato</a>
-            </li>
-          </ul>
-          {/* <button className="dark">
-            <FaMoon className="moon" />
-          </button> */}
-          <button onClick={toggleTheme} className="toggle">
-            {theme === "dark" ? (
-              <MdWbSunny className="sun" />
-            ) : (
-              <FaMoon className="moon" />
-            )}
-          </button>
-        </div>
-      </div>
-    </div>
+      </nav>
+    </>
   );
 }
+
+export default Navbar;

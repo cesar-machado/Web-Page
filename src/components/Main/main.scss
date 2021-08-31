@@ -30,6 +30,7 @@
 
       img {
         align-items: center;
+        border-radius: 10px;
       }
       .image1 {
         // display: flex;
@@ -41,7 +42,12 @@
 
       .img2 {
         position: absolute;
+        border-radius: 10px;
+
         // top: 0;
+        img {
+          border-radius: 10px;
+        }
       }
     }
   }
@@ -220,6 +226,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

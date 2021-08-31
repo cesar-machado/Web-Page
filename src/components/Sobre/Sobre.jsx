@@ -1,7 +1,12 @@
 import "./sobre.scss";
 import Back from "../../assets/fundo-branco.png";
+// import { useTheme } from "../../hooks/useTheme";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 export default function Sobre() {
+  // const { theme } = useTheme();
   return (
     <section className="about" id="Sobre">
       <div className="wrapper">

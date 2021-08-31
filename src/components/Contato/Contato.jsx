@@ -6,8 +6,6 @@ import "./contato.scss";
 import {
   FaLinkedin,
   FaInstagramSquare,
-  FaGithub,
-  FaWhatsapp,
   FaEnvelope,
   FaTwitterSquare,
   FaWhatsappSquare,
@@ -31,7 +29,7 @@ export default function Contato() {
     e.target.reset();
   }
   return (
-    <section className="contact" id="Contato">
+    <section className="contato" id="Contato">
       <div className="wrapper">
         <div className="left">
           <img src={ImgContato} alt="avatar" />
@@ -126,6 +124,14 @@ export default function Contato() {
                 />
                 <p> +55 11 99281-2563</p>
               </a>
+              <a
+                href="mailto:cesarmach19@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaEnvelope color="#5436d8" fontSize="30px" className="icon" />
+                <p>cesarmach19@gmail.com</p>
+              </a>
             </div>
             <div className="codigo">
               <h2>Veja um pouco de código</h2>
@@ -139,7 +145,7 @@ export default function Contato() {
                   fontSize="30px"
                   className="icon"
                 />
-                <p>cesarmach30</p>
+                <p>cesar-machado</p>
               </a>
             </div>
           </div>

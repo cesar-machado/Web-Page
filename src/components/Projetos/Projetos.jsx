@@ -38,7 +38,7 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="projetos" id="Projetos">
+    <section className="projetos" id="Projetos">
       <h1>Projetos</h1>
       <ul>
         {list.map((item) => (
@@ -59,6 +59,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-    </div>
+      {/* <h3>Projetos em construção........</h3> */}
+    </section>
   );
 }

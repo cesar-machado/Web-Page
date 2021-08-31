@@ -1,12 +1,14 @@
 @import "../../global.scss";
 
-.contact {
-  max-width: 1450px;
-  margin: 0 auto;
+#Contato {
+  background: linear-gradient(to bottom, #ffffff, #ccc8c8);
+
   .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1450px;
+    margin: 0 auto;
 
     .left {
       flex: 0.5;
@@ -79,7 +81,7 @@
         overflow: hidden;
         height: 50px;
 
-        width: 29%;
+        width: 40%;
         transition: all 250ms;
 
         p {
@@ -101,6 +103,94 @@
 
         a {
           margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #Contato {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .left {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          align-items: center;
+          justify-content: center;
+
+          input {
+            margin-top: 10px;
+            height: 20px;
+            width: 250px;
+            // border-radius: 5px;
+          }
+
+          textarea {
+            margin-top: 10px;
+            width: 250px;
+            height: 80px;
+          }
+
+          .btn {
+            margin-left: 0px;
+          }
+        }
+      }
+
+      .right {
+        // background-color: #5555;
+        flex: 0.5;
+        flex-direction: column;
+        margin-top: 20px;
+
+        h2 {
+          color: $textColor;
+          margin-bottom: 10px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          // margin-top: 20px;
+          overflow: hidden;
+          height: 50px;
+
+          width: 40%;
+          transition: all 250ms;
+
+          p {
+            color: #000;
+            margin-left: 5px;
+          }
+          .icon {
+            margin-left: 15px;
+          }
+
+          &:hover {
+            transform: scale(1);
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+        .codigo {
+          margin-top: 20px;
+
+          a {
+            margin-top: 10px;
+          }
         }
       }
     }
