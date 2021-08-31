@@ -163,12 +163,13 @@
         a {
           display: flex;
           align-items: center;
+          // justify-content: center;
           text-decoration: none;
           // margin-top: 20px;
           overflow: hidden;
           height: 50px;
+          width: 40vw;
 
-          width: 40%;
           transition: all 250ms;
 
           p {
