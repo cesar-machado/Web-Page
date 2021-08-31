@@ -40,7 +40,7 @@ export default function Portfolio() {
   return (
     <section className="projetos" id="Projetos">
       <h1>Projetos</h1>
-      <ul>
+      {/* <ul>
         {list.map((item) => (
           <ProjetosList
             key={item.id}
@@ -58,8 +58,8 @@ export default function Portfolio() {
             <h3>{d.title}</h3>
           </div>
         ))}
-      </div>
-      {/* <h3>Projetos em construção........</h3> */}
+      </div> */}
+      <h3>Projetos em construção........</h3>
     </section>
   );
 }
