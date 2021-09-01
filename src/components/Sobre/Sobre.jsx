@@ -14,19 +14,19 @@ export default function Sobre() {
           <div className="content">
             <h2>Seja bem-vindo</h2>
             <p>
-              Fiz esse site para que você conheça mais sobre mim, minha carreira
-              e meus projetos.
+              O objetivo deste site é divulgar meus conhecimentos profissionais
+              e alguns projetos desenvolvidos ao longo de minha carreira.
             </p>
             <p>
-              Sou desenvolvedor front-end jr e mobile com React Native.
-              Atualmente estou trabalhando como Instrutor de Informática no
+              Sou desenvolvedor front-end e mobile com React Native. Atualmente
+              estou trabalhando como Instrutor de Informática no
               <a href="https://institutostefaniniead.com.br/">
                 Instituto Stefanini
               </a>
               .
             </p>
             <h3>
-              Tenho interesse em vagas de Desenvolvedor front-end jr ou mobile.
+              Tenho interesse em vagas de Desenvolvedor front-end ou mobile.
             </h3>
             <a href="#Contato">
               <button className="btn-ct">Entre em Contato</button>
