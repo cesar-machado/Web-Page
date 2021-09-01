@@ -54,7 +54,7 @@
       color: white;
       position: relative;
       transition: all 0.5s ease;
-      cursor: pointer;
+      // cursor: move;
 
       // @include mobile {
       //   width: 130px;
@@ -64,6 +64,20 @@
       h3 {
         position: absolute;
         font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        margin-top: 80px;
+      }
+
+      .url {
+        margin-right: 50px;
+      }
+
+      .git {
+        margin-left: 50px;
       }
 
       img {
@@ -189,7 +203,7 @@
     }
 
     h3 {
-      color: rgb(230, 19, 19);
+      // color: rgb(230, 19, 19);
       font-size: 25px;
     }
 

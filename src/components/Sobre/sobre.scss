@@ -349,15 +349,16 @@
         }
 
         .back {
-          position: absolute;
-          margin-top: -20px;
+          display: none;
+          // position: absolute;
+          // margin-top: -20px;
 
-          margin-left: 25px;
-          img {
-            width: 320px;
-            height: 225px;
-            border-radius: 30px;
-          }
+          // margin-left: 25px;
+          // img {
+          //   width: 320px;
+          //   height: 225px;
+          //   border-radius: 30px;
+          // }
         }
 
         .conteudo {
@@ -461,25 +462,13 @@
       .right {
         .skills {
           width: 320px;
-          height: 320px;
+          height: 230px;
           margin-left: 0px;
-          margin-top: 22px;
+          margin-top: 0px;
           background: #fff;
           border-radius: 30px;
           position: relative;
           z-index: 2;
-        }
-
-        .back {
-          position: absolute;
-          margin-top: -12px;
-
-          margin-left: 25px;
-          img {
-            width: 320px;
-            height: 350px;
-            border-radius: 30px;
-          }
         }
 
         .conteudo {
@@ -491,8 +480,8 @@
 
           .col {
             display: flex;
-            line-height: 35px;
-            margin-top: 10px;
+            line-height: 28px;
+            margin-top: 5px;
 
             p {
               font-size: 15px;
@@ -590,18 +579,6 @@
           border-radius: 30px;
           position: relative;
           z-index: 2;
-        }
-
-        .back {
-          position: absolute;
-          margin-top: -20px;
-
-          margin-left: 25px;
-          img {
-            width: 320px;
-            height: 195px;
-            border-radius: 30px;
-          }
         }
 
         .conteudo {
