@@ -32,7 +32,7 @@ export default function Sobre() {
               <button className="btn-ct">Entre em Contato</button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1eVpzbu7a_a1ShLsiqeHanSteFDXmAHfO/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vWGmm10La6GAxe_uuq_TOMSsRz-II48k/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
