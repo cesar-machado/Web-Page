@@ -46,7 +46,7 @@ function Navbar() {
                   Projetos
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
                   className="nav-links"
                   href="#Contato"
