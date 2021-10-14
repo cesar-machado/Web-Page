@@ -56,7 +56,6 @@ export default function Contato() {
                 <textarea
                   className="form-control"
                   id=""
-                  cols="50"
                   rows="5"
                   placeholder="Mensagem"
                   name="message"
