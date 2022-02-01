@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@import '../../global.scss';
 
 #Contato {
   background: linear-gradient(to bottom, #ffffff, #ccc8c8);
@@ -110,13 +110,127 @@
   }
 }
 
+@media screen and (min-width: 1900px) {
+  #Contato {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1450px;
+      margin: 50px auto;
+
+      .left {
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+
+        img {
+          height: 400px;
+          width: 420px;
+        }
+
+        h1 {
+          margin-top: 10px;
+          color: $textColor;
+        }
+
+        .inputs {
+          margin-top: 10px;
+
+          input {
+            margin-top: 10px;
+            height: 40px;
+            width: 380px;
+            border-radius: 5px;
+            border: 1px solid $textColor;
+          }
+
+          textarea {
+            margin-top: 10px;
+            width: 380px;
+            border-radius: 5px;
+            border: 1px solid $textColor;
+          }
+
+          .btn {
+            width: 320px;
+            height: 40px;
+            margin-left: 28px;
+            border-radius: 10px;
+            border: 0;
+            font-size: 15px;
+            cursor: pointer;
+            background: $mainColor;
+            color: #fff;
+            transition: filter 0.1s;
+
+            &:hover {
+              filter: brightness(1.2);
+            }
+          }
+        }
+      }
+
+      .right {
+        // background-color: #5555;
+        flex: 0.5;
+        flex-direction: column;
+
+        h2 {
+          color: $textColor;
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          // margin-top: 20px;
+          overflow: hidden;
+          height: 80px;
+
+          width: 50%;
+          transition: all 250ms;
+
+          p {
+            color: #000;
+            font-size: 25px;
+            margin-left: 5px;
+          }
+          .icon {
+            margin-left: 15px;
+            font-size: 50px;
+          }
+
+          &:hover {
+            transform: scale(1);
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+        .codigo {
+          margin-top: 20px;
+
+          a {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #Contato {
     .wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
+      // flex-direction: column;
 
       .left {
         img {
