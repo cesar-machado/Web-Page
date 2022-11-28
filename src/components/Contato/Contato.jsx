@@ -21,6 +21,7 @@ export default function Contato() {
       .then(
         (result) => {
           alert('Sua mensagem foi enviada com sucesso.✅');
+          console.log(result);
         },
         (error) => {
           console.log(error.text);
